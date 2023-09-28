@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "header": "Geely Emgrand",
+        "model": "Flagship",
+        "price": "56 900 BYN",
+        "motor": "1.5 л, 103 л.с, Бензин",
+        "BodyType": "Sedan"
+    },
+    {
+        "id": 2,
+        "header": "Volkswagen",
+        "model": "Polo",
+        "price": "43 834 BYN",
+        "motor": "1.6 л, 110 л.с, Бензин",
+        "BodyType": "Sedan"
+    },
+    {
+        "id": 3,
+        "header": "Kia Rio",
+        "model": "",
+        "price": "37 316 BYN",
+        "motor": "1.6 л, 123 л.с, Бензин",
+        "BodyType": "Sedan"
+    },
+    {
+        "id": 4,
+        "header": "Audi",
+        "model": "A6",
+        "price": "32 587 BYN",
+        "motor": "2 л, 140 л.с, Дизель",
+        "BodyType": "Sedan"
+    },
+    {
+        "id": 5,
+        "header": "Mercedes-Benz",
+        "model": "C-Класс",
+        "price": "47 418 BYN",
+        "motor": "1.8 л, 156 л.с, Бензин",
+        "BodyType": "Sedan"
+    },
+    {
+        "id": 6,
+        "header": "Mercedes-Benz",
+        "model": "A-Класс",
+        "price": "40 420 BYN",
+        "motor": "1.8 л, 156 л.с, Бензин",
+        "BodyType": "Sedan"
+    }
+    
+]

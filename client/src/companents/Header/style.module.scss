@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 550px;
+    width: 1220px;
+    margin: auto;
+    padding: 13px 21px;
+    position: relative;
+
+    h1 {
+        color: rgb(46, 44, 44);
+        font: 800 24px Dela Gothic One;
+    }
+
+    .btns {
+        display: flex;
+        align-items: center;
+    }
+
+    .shopCartButton {
+        float: right;
+        cursor: pointer;
+        transition: color transform 500ms ease;
+    }
+
+    .shopCartButton:hover,
+    .shopCartButton:active {
+        color: brown;
+        transform: scale(1.5);
+    }
+
+    .shopCart {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 450px;
+        min-height: 100px;
+        background: blue;
+        z-index: 1000;
+    }
+}

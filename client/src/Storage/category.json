@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "category": "Geely Emgrand"
+  },
+  {
+    "id": 2,
+    "category": "Volkswagen"
+  },
+  {
+    "id": 3,
+    "category": "Kia Rio"
+  },
+  {
+    "id": 4,
+    "category": "Audi"
+  },
+  {
+    "id": 5,
+    "category": "Mercedes-Benz"
+  }
+]
