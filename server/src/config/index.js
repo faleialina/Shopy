@@ -1,4 +1,4 @@
 require('dotenv').config('./.env');
 
-const { PORT, LOG_DIR, HOST_DB, DATABASE } = process.env;
-module.exports = { PORT, LOG_DIR, HOST_DB, DATABASE };
+const { PORT, HOST_DB, DATABASE } = process.env;
+module.exports = { PORT, HOST_DB, DATABASE };
