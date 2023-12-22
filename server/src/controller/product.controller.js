@@ -36,7 +36,7 @@ route.post('/', isvalidProductBody, async (req, res) => {
     }
 });
 
-route.put('/:id', isvalidProductId,isvalidProductBody, async (req, res) => {
+route.put('/:id', isvalidProductId, isvalidProductBody, async (req, res) => {
     try {
         const { id } = req.params;
         const { product, user_id } = req.body;
