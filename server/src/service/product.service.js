@@ -6,26 +6,26 @@ async function getAllProduct() {
     return data;
 };
 
-async function getByIdProduct(id) {
-    const data = await getByIdProductDb(id);
+async function getByIdProduct(_id) {
+    const data = await getByIdProductDb(_id);
     if (!data.length) throw new Error('no such id');
     return data;
 };
 
-async function createProduct(product, user_id) {
-    const data = await createProductDb(product, user_id);
-    if (!data.length) throw new Error('object not created');
+async function createProduct(header, price) {
+    const data = await createProductDb(header, price);
+
     return data;
 };
 
-async function updateProduct(id, product, user_id) {
-    const data = await updateProductDb(id, product, user_id);
+async function updateProduct(_id, header, price) {
+    const data = await updateProductDb(_id, header, price);
     if (!data.length) throw new Error('no such id')
     return data;
 };
 
-async function deleteProduct(id) {
-    const data = await deleteProductDb(id);
+async function deleteProduct(_id) {
+    const data = await deleteProductDb(_id);
     if (!data.length) throw new Error('no such id')
     return data;
 }

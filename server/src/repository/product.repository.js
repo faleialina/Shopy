@@ -4,27 +4,27 @@ const { ObjectId } = require('mongodb');
 async function getAllProductDb() {
     const { products } = await connect();
     return await products.find().toArray();
-   
+
 };
 
-async function getByIdProductDb(id) {
+async function getByIdProductDb(_id) {
     const { products } = await connect();
-    return await products.find({id: new ObjectId(id) }).toArray();
+    return await products.find({ _id: new ObjectId(_id) }).toArray();
 };
 
-async function createProductDb(product, user_id) {
+async function createProductDb(header, price) {
     const { products } = await connect();
-    await products.insertOne({ product, user_id });
+    await products.insertOne({ header, price });
 };
 
-async function updateProductDb(id, product, user_id) {
+async function updateProductDb(_id, header, price) {
     const { products } = await connect();
-    await products.updateOne({ id: new ObjectId(id) }, { $set: { product, user_id, id } });
+    await products.updateOne({ _id: new ObjectId(_id) }, { $set: { header, price } });
 };
 
-async function deleteProductDb(id) {
+async function deleteProductDb(_id) {
     const { products } = await connect();
-    await products.deleteOne({ id: new ObjectId(id) });
+    await products.deleteOne({ _id: new ObjectId(_id) });
 };
 
 
