@@ -14,19 +14,16 @@ async function getByIdProduct(_id) {
 
 async function createProduct(header, price) {
     const data = await createProductDb(header, price);
-
     return data;
 };
 
 async function updateProduct(_id, header, price) {
     const data = await updateProductDb(_id, header, price);
-    if (!data.length) throw new Error('no such id')
     return data;
 };
 
 async function deleteProduct(_id) {
     const data = await deleteProductDb(_id);
-    if (!data.length) throw new Error('no such id')
     return data;
 }
 
