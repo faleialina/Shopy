@@ -13,15 +13,17 @@ async function getUserById(_id) {
 };
 
 async function createUser(name, surname, email, pwd) {
-    await createUserDb(name, surname, email, pwd);
-
+    const data = await createUserDb(name, surname, email, pwd);
+    return data;
 };
 async function updateUser(_id, name, surname, email, pwd) {
-    await updateUserDb(_id, name, surname, email, pwd);
+    const data = await updateUserDb(_id, name, surname, email, pwd);
+    return data;
 };
 
 async function deleteUser(_id) {
-    await deleteUserDb(_id);
+    const data = await deleteUserDb(_id);
+    return data;
 };
 
 module.exports = { getAllUser, getUserById, createUser, updateUser, deleteUser };
