@@ -28,6 +28,16 @@ export const productApi = createApi({
             }),
         }),
 
+        getByIdProduct: builder.query({
+            query: (id) => `/${id}`,
+            method: 'GET',
+        }),
+
+        getAllProducts: builder.query({
+            query: () => '/',
+            method: 'GET',
+        })
+
     }),
 });
 
@@ -35,4 +45,6 @@ export const {
     useCreateProductMutation,
     useUpdateProductMutation,
     useDeleteProductMutation,
+    useGetByIdProductQuery,
+    useGetAllProductsQuery,
 } = productApi;
