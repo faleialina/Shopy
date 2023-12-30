@@ -8,12 +8,16 @@ import style from './style.module.scss'
 
 
 
-function HomePage() {
+function RegPage() {
 
 
     return (
         <div className={style.wrapper}>
-            <h1>Sign in</h1>
+            <h1>Sign up</h1>
+            <h2>Name</h2>
+            <Input variant="filled" radius="md" placeholder="Name" />
+            <h2>Surname</h2>
+            <Input variant="filled" radius="md" placeholder="Surname" />
             <h2>Email Address</h2>
             <Input variant="filled" radius="md" placeholder="Email Address" />
             <h2>Password</h2>
@@ -23,15 +27,15 @@ function HomePage() {
                 <List.Item>Must contain at least 1 number</List.Item>
                 <List.Item>Must contain lover case and capital letters</List.Item>
             </List>
-            <Button fullWidth
+            <Link to={'/shopy'}> <Button fullWidth
                 variant="gradient"
                 gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
             >
                 Create Account
-            </Button>
+            </Button></Link>
             <div className={style.flex}>
                 <p>Have an account?</p>
-                <Link to={'/shopy'}><Button variant="subtle">Sign in</Button></Link>
+                <Link to={'/auth'}><Button variant="subtle">Sign in</Button></Link>
             </div>
 
 
@@ -42,4 +46,4 @@ function HomePage() {
     )
 }
 
-export default HomePage;
+export default RegPage;
