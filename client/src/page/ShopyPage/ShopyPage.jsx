@@ -15,7 +15,7 @@ function ShopyPage() {
 
     const { data } = useGetAllProductsQuery();
    
-
+    
 
     return (
         <div>
@@ -27,7 +27,7 @@ function ShopyPage() {
 
                 <Filters />
                 {/* setExpression={setExpression}  */}
-                <div className={style.itemBox}>
+              <div className={style.itemBox}>
                     {data?.map((elem, index) => (
                         <div key={index} className={style.item}>
                             <div className={style.img}></div>
@@ -37,7 +37,7 @@ function ShopyPage() {
                                 <p>{elem.price}</p>
                             </div>
                             <div className={style.flex}>
-                                <Button variant="default"><Link to={`/shopy/${elem.id}`}>All details</Link></Button>
+                               <Link to={`/shopy/${elem._id}`}>  <Button variant="default" >All details</Button></Link> 
                                 <Button variant="filled">Add to Cart</Button>
                                 {/* onClick={doAdd} */}
                             </div>
