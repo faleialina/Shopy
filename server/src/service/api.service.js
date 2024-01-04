@@ -4,7 +4,9 @@ const bcrypt = require('bcrypt');
 const salt = 2;
 
 async function createUser(name, surname, email, pwd) {
+
     const user = await getUserByEmail(email);
+    console.log(user);
     // if (user.length) throw new Error('there is such a user');
 
     const hashPwd = await bcrypt.hash(pwd, salt);
